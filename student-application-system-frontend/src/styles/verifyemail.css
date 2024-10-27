@@ -1,0 +1,53 @@
+.verify_email {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #87cefa;
+}
+.verify_email .verify_email-box {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 2rem 5rem;
+  gap: 1rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.verify_email .verify_email-box h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #2a6dab;
+}
+.verify_email .verify_email-box p {
+  font-size: 1.3rem;
+  color: grey;
+}
+.verify_email .verify_email-box .btn,
+.verify_email .verify_email-box .btn-sent {
+  width: 100%;
+  padding: 1rem;
+  background-color: #2a6dab;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.verify_email .verify_email-box .btn:hover,
+.verify_email .verify_email-box .btn-sent:hover {
+  background-color: #87cefa;
+  color: #2a6dab;
+}
+.verify_email .verify_email-box .btn-sent {
+  background-color: white;
+  border: 1px solid #2a6dab;
+  color: black;
+}
+.verify_email .verify_email-box .btn-sent:hover {
+  background-color: #2a6dab;
+  color: white;
+}/*# sourceMappingURL=verifyemail.css.map */

@@ -1,0 +1,48 @@
+.application-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-self: start;
+  align-items: start;
+  padding: 2rem 4rem;
+  width: 100%;
+}
+.application-list a {
+  text-decoration: none;
+}
+.application-list h1 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+.application-list .application-list_wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  flex-direction: column;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.application-list .application-list_wrapper a {
+  background-color: #87cefa;
+  width: 100%;
+  padding: 0.7rem;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.application-list .application-list_wrapper a span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: black;
+  margin: 1rem 0;
+  transition: all 0.3s ease;
+}
+.application-list .application-list_wrapper a:hover {
+  background-color: #2a6dab;
+}
+.application-list .application-list_wrapper a:hover span {
+  color: white;
+}/*# sourceMappingURL=applicationlist.css.map */

@@ -1,0 +1,35 @@
+.application_page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 3rem 2rem;
+  gap: 1rem;
+  width: 100%;
+}
+.application_page h1 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+  color: #2a6dab;
+}
+.application_page div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+}
+.application_page div span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2a6dab;
+}
+.application_page div p {
+  font-size: 1.5rem;
+}
+.application_page div p:first-child {
+  font-weight: 600;
+  font-size: 2rem;
+}/*# sourceMappingURL=applicationpage.css.map */

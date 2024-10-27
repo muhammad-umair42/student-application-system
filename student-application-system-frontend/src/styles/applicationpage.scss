@@ -1,0 +1,40 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+.application_page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 3rem 2rem;
+  gap: 1rem;
+  width: 100%;
+  h1 {
+    font-size: 3rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    color: $dark_blue;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+    width: 100%;
+    span {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: $dark_blue;
+    }
+    p {
+      font-size: 1.5rem;
+
+      &:first-child {
+        font-weight: 600;
+        font-size: 2rem;
+      }
+    }
+  }
+}

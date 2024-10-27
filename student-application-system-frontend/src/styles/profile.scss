@@ -1,0 +1,90 @@
+@import './variables.scss';
+@import './mixins.scss';
+@import './animations.scss';
+.profile {
+  opacity: 0;
+  animation: tranY 0.5s ease 1.8s forwards;
+  form {
+    @include flex-center;
+    width: max-content;
+    min-width: 40%;
+
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 2rem;
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+    border-radius: 1rem;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(112, 112, 112, 0.2); // Dark overlay effect
+      z-index: -1; // Ensure it is behind the .profile content
+      pointer-events: none; // Prevent interaction with the pseudo-element
+    }
+    @media screen and (max-width: 600px) {
+      width: 100%;
+    }
+    .profile_item {
+      @include flex-center;
+      justify-content: space-between;
+      width: 100%;
+      gap: 1rem;
+      @media screen and (max-width: 600px) {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+      }
+
+      span {
+        font-size: 1.5rem;
+        font-weight: 500;
+
+        @media screen and (max-width: 600px) {
+          font-size: 1.2rem;
+        }
+      }
+      input,
+      textarea {
+        width: 30rem;
+        padding: 0.5rem;
+        border: 1px solid black;
+        border-radius: 5px;
+        font-size: 1.5rem;
+        outline: none;
+
+        @media screen and (max-width: 600px) {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .profile_edit-btn,
+    .profile_save-btn {
+      @include flex-center;
+      width: 100%;
+      gap: 0.5rem;
+      padding: 1rem;
+      background-color: $dark_blue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s;
+      &:hover {
+        background-color: $light_blue;
+      }
+    }
+  }
+}
+
+.profile_input-readOnly {
+  background-color: rgba(246, 246, 246, 0.763);
+  cursor: not-allowed;
+  border: 1px solid white !important;
+}

@@ -1,0 +1,50 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+.error_page {
+  @include flex-center;
+  height: 100vh;
+  width: 100%;
+  background-color: $light_blue;
+  a {
+    text-decoration: none;
+  }
+
+  .error_page-box {
+    @include flex-center;
+    flex-direction: column;
+    background-color: white;
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    .error_page-heading {
+      font-size: 2rem;
+      font-weight: 500;
+      color: $dark_blue;
+    }
+    p {
+      font-size: 1.3rem;
+      font-weight: 300;
+      color: grey;
+      text-align: center;
+    }
+
+    .error_page-btn {
+      margin-top: 2rem;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      background-color: $dark_blue;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: darken($light_blue, 10%);
+      }
+    }
+  }
+}

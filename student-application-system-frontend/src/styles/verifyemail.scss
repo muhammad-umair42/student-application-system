@@ -1,0 +1,57 @@
+@import './variables.scss';
+
+.verify_email {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $light_blue;
+
+  .verify_email-box {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 2rem 5rem;
+    gap: 1rem;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    h2 {
+      font-size: 2rem;
+      font-weight: 500;
+      color: $dark_blue;
+    }
+    p {
+      font-size: 1.3rem;
+      color: grey;
+    }
+    .btn,
+    .btn-sent {
+      width: 100%;
+      padding: 1rem;
+      background-color: $dark_blue;
+      color: white;
+      font-size: 1.2rem;
+      border: none;
+      margin-top: 2rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: all 0.3s;
+      &:hover {
+        background-color: $light_blue;
+        color: $dark_blue;
+      }
+    }
+    .btn-sent {
+      background-color: white;
+      border: 1px solid $dark_blue;
+      color: black;
+      &:hover {
+        background-color: $dark_blue;
+        color: white;
+      }
+    }
+  }
+}

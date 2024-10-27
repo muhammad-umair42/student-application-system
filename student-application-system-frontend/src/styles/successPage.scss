@@ -1,0 +1,48 @@
+@import './mixins.scss';
+@import './variables.scss';
+.success_page {
+  width: 100%;
+  height: 100vh;
+  @include flex-center;
+  background-color: $light_blue;
+  .success_page-box {
+    @include flex-center;
+    flex-direction: column;
+    padding: 5rem 2rem;
+    gap: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    span {
+      font-size: 1.5rem;
+      font-weight: 300;
+      color: grey;
+      margin-top: 3rem;
+    }
+  }
+}
+
+.success_page-logo_container {
+  @include flex-center;
+  width: 15rem;
+  margin-bottom: 1rem;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.success_page-img_container {
+  @include flex-center;
+  width: 15rem;
+  background-color: $dark_blue;
+  padding: 1rem;
+  border-radius: 1rem;
+  img {
+    width: 80%;
+    object-fit: contain;
+  }
+}

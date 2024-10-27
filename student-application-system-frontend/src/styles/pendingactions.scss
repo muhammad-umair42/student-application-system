@@ -1,0 +1,47 @@
+@import './variables.scss';
+.pending-actions {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: $dark_blue;
+    margin-bottom: 1rem;
+  }
+  .pending_items {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 2rem 1rem;
+
+    a {
+      text-decoration: none;
+      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+        rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    }
+    a {
+      width: 100%;
+      padding: 1rem;
+
+      cursor: pointer;
+      &:hover {
+        background-color: $light_blue;
+        border-radius: 1rem;
+      }
+      span {
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding: 0.8rem;
+        color: black;
+      }
+    }
+  }
+}

@@ -1,0 +1,129 @@
+@keyframes opacity {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes tranX {
+  0% {
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes tranY {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.profile {
+  opacity: 0;
+  animation: tranY 0.5s ease 1.8s forwards;
+}
+.profile form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: 40%;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 2rem;
+  position: relative;
+  background-color: transparent;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.profile form::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(112, 112, 112, 0.2);
+  z-index: -1;
+  pointer-events: none;
+}
+@media screen and (max-width: 600px) {
+  .profile form {
+    width: 100%;
+  }
+}
+.profile form .profile_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem;
+}
+@media screen and (max-width: 600px) {
+  .profile form .profile_item {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+}
+.profile form .profile_item span {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+@media screen and (max-width: 600px) {
+  .profile form .profile_item span {
+    font-size: 1.2rem;
+  }
+}
+.profile form .profile_item input,
+.profile form .profile_item textarea {
+  width: 30rem;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  outline: none;
+}
+@media screen and (max-width: 600px) {
+  .profile form .profile_item input,
+  .profile form .profile_item textarea {
+    font-size: 1.2rem;
+  }
+}
+.profile form .profile_edit-btn,
+.profile form .profile_save-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 0.5rem;
+  padding: 1rem;
+  background-color: #2a6dab;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.profile form .profile_edit-btn:hover,
+.profile form .profile_save-btn:hover {
+  background-color: #87cefa;
+}
+
+.profile_input-readOnly {
+  background-color: rgba(246, 246, 246, 0.763);
+  cursor: not-allowed;
+  border: 1px solid white !important;
+}/*# sourceMappingURL=profile.css.map */
