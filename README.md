@@ -64,6 +64,8 @@ MONGO_URL=your_mongodb_uri
 JWT_SECRET=your_jwt_secret
 EMAIL_USERNAME=your_email_for_nodemailer
 EMAIL_PASSWORD=your_app_secret_password_for_sending_emails
+MICROSOT_GRAPH_URL=https://graph.microsoft.com/v1.0/me?$select=id,displayName,mail,userPrincipalName
+AZURE_AUTHORITY=https://login.microsoftonline.com/common/7fa84815-8fcd-41fa-8542-5f8cb10487a7//public ms 
 ```
 
 5. **Running the Application**:
